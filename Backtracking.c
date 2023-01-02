@@ -17,6 +17,7 @@ int tong(int x[], int n)
 
 void cogangtim(int k, int m, int X[], int n)
 {
+    //k--;
     if(X[k] == 0)
     {
         for(int i=-9; i<=9; i++)
@@ -35,7 +36,6 @@ void cogangtim(int k, int m, int X[], int n)
             }
             X[k] = 0;
             m++;
-
         }
     }
     else
@@ -46,7 +46,7 @@ int main()
 {
     int X[5] = {1, 0, 7 , 0 , 3};
     size_t n = sizeof(X)/sizeof(X[0]);
-    cogangtim(1, 2, X, n);
+    cogangtim(0, 2, X, n);
 
     return 0;
 }
